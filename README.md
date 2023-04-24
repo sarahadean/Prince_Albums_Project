@@ -10,15 +10,21 @@ This app will allow a user to view information about Prince's body of work. A us
 - Add and remove tracks from your favorite list
 
 Nav bar of album covers
-	- Click to reveal info
+- Click to reveal info
 
 Image of Album with title
-	- Year released
-	- Album name
-	- Track list
+- Year released
+- Album name
+- Track list
 
 Event listeners:
-	- Submit
-	- Click
-	- Mouseover
-    - Scroll Down
+- Submit
+- Click
+- Mouseover
+- Scroll Down
+
+github repo:
+https://github.com/sarahadean/Prince_Albums_Project
+
+Stretch Goals:
+- Advanced Styling
