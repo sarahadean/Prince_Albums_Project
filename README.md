@@ -23,10 +23,4 @@ Event listeners:
 - Mouseover
 - Scroll Down
 
-github repo:
-https://github.com/sarahadean/Prince_Albums_Project
-
-Stretch Goals:
-- Advanced Styling!
-
-[Screenshot 2023-04-24 at 1 44 23 PM](https://user-images.githubusercontent.com/128323898/234105524-26be1eb2-ca65-4658-bdce-62bbad063c3e.png)
+   
