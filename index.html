@@ -2,7 +2,34 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>DOGGO</title>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="src/index.js"></script>
-    
+    <title>Prince</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>Top Prince Albums</header>
+        <div id="nav-bar">
+        <nav>Prince Album Photos Here</nav><!-- Location of album art preview, will be clickable -->
+        </div> 
+        <div id="favorites" class="sidebar"> 
+            <form>Favorite's List
+                <li>track <button> x </button> </li>
+            </form>
+        </div> <!--Location of interactable favorites list-->
+        <div id="album-info"> <!---use .map to display album cover, name, year, tracks-->
+            <img        src="https://people.com/thmb/tJYiGSRuyxSYMKqC9z8yON4cpqw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/prince-purple-600x800-f6e81f00492e40e4bb7ae28e4e4a2909.jpg"/>
+            <h2>Album Title</h2>
+            <p>Year Release</p>
+            
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content"> <!--empty star element, click to rate-->
+                <a>1 star</a>
+                </div>
+            
+            <ul>Tracks</ul>
+
+            <li>track 1 <button>+</button></li>
+            <li>track 2 <button>+</button></li>
+        </div>
+    </body>
+</html>
