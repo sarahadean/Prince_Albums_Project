@@ -17,13 +17,11 @@
           
 
         <div id="album-info" class="flex-container"> <!---use .map to display album cover, name, year, tracks-->
-            <img class="flex-child" id="album-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg"/>
+            <img class="flex-child" id="album-image" />
             <div class="flex-child">
                 <h2 id="title">Album Title</h2>
                 <p id="year">Year Release</p>
-                <ul>Tracks</ul>
-                <li>track 1 <button>+</button></li>
-                <li>track 2 <button>+</button></li>
+                <ul id="tracklist">Tracks</ul>
                 <button class="dropbtn">Dropdown</button>
                 
                 <div class="dropdown-content"> <!--empty star element, click to rate-->
@@ -43,9 +41,9 @@
             <hr>
         </div>
         <div id="favorites">
-            <form>
+            <form id="faveForm">
                 <h2>Favorite's List</h2>
-                <hr>
+                <hr id="faveTrack">
                 <li>track <button> x </button> </li>
                 <li>track <button> x </button> </li>
                 <li>track <button> x </button> </li>
