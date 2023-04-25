@@ -1,35 +1,60 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Prince</title>
-    <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="main.css"/>
     </head>
     <body>
-        <header>Top Prince Albums</header>
-        <div id="nav-bar">
-        <nav>Prince Album Photos Here</nav><!-- Location of album art preview, will be clickable -->
-        </div> 
-        <div id="favorites" class="sidebar"> 
-            <form>Favorite's List
+        <script type="text/javascript" src="index.js"></script>
+        <header id="header">Top Prince Albums</header>
+            <hr>
+            <div id="nav-bar">
+                <nav id="album_nav">
+        
+                <!-- Location of album art preview, will be clickable --></nav>
+            </div> 
+            <hr>
+          
+
+        <div id="album-info" class="flex-container"> <!---use .map to display album cover, name, year, tracks-->
+            <img class="flex-child" id="album-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg"/>
+            <div class="flex-child">
+                <h2 id="title">Album Title</h2>
+                <p id="year">Year Release</p>
+                <ul>Tracks</ul>
+                <li>track 1 <button>+</button></li>
+                <li>track 2 <button>+</button></li>
+                <button class="dropbtn">Dropdown</button>
+                
+                <div class="dropdown-content"> <!--empty star element, click to rate-->
+                    <p>
+                        <img src="">
+                        <style>
+                            .checked{
+                                color:yellow
+                            }
+                        </style>
+                        <span class="checked"></span>
+                        <span class="unchecked"></span>
+                
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="favorites">
+            <form>
+                <h2>Favorite's List</h2>
+                <hr>
+                <li>track <button> x </button> </li>
+                <li>track <button> x </button> </li>
+                <li>track <button> x </button> </li>
+                <li>track <button> x </button> </li>
+                <li>track <button> x </button> </li>
+                <li>track <button> x </button> </li>
                 <li>track <button> x </button> </li>
             </form>
-        </div> <!--Location of interactable favorites list-->
-        <div id="album-info"> <!---use .map to display album cover, name, year, tracks-->
-            <img        src="https://people.com/thmb/tJYiGSRuyxSYMKqC9z8yON4cpqw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(299x0:301x2)/prince-purple-600x800-f6e81f00492e40e4bb7ae28e4e4a2909.jpg"/>
-            <h2>Album Title</h2>
-            <p>Year Release</p>
-            
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content"> <!--empty star element, click to rate-->
-                <a>1 star</a>
-                </div>
-            
-            <ul>Tracks</ul>
-
-            <li>track 1 <button>+</button></li>
-            <li>track 2 <button>+</button></li>
+            <hr>
         </div>
     </body>
 </html>
