@@ -3,4 +3,60 @@ html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* DomaineDisplay, 'serif'; */
     color: antiquewhite;
+    margin: 10px;
 }
+#header{
+    background-color: black;
+    font-size: 50px;
+}
+
+#nav-bar{
+   
+    font-size: 50px;
+    height:auto;
+    display:flex;
+    justify-content: center;
+  
+}
+
+/* #album-info{
+    /* display:flex; */
+
+
+#album-image{
+    width: 450px;
+    height: 450px;
+}
+
+/* #title, #year {
+    /* margin-left: 500px; */
+    /* float: left;
+    display: inline */
+
+
+.flex-container {
+    display: flex;
+    float: left;
+    width: auto;
+
+}
+
+.flex-child{
+    flex: 1;
+    float: left;
+    width: auto;
+    margin: 10px;
+    margin-left: 40px;
+    font-size: xx-large;
+}
+
+#favorites{
+    background-color: green;
+   float: right;
+   width: 300px;
+   text-align: center;
+   height: auto;
+}
+/* .container{
+    display: block;
+} */
