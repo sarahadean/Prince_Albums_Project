@@ -34,7 +34,7 @@ function displayAlbum(album) {
         const trackButton = document.createElement('button')
         trackSong.textContent = ` ${track} `
         trackButton.textContent = "+"
-        trackButton.addEventListener('click', () => {trackFavorites()})
+        trackButton.addEventListener('click', trackFavorites)
         displayList.appendChild(trackSong)
         trackSong.appendChild(trackButton)
 
@@ -42,11 +42,18 @@ function displayAlbum(album) {
 
 }
 
-function trackFavorites(track) {
-    const hrTrack = getElementById('faveTrack')
-    const favoriteTrack = document.createElement('li')
-    favoriteTrack.textContent = e.target.parentNode
-    hrTrack.appendChild(favoriteTrack)
+function trackFavorites(e) {
     e.preventDefault()
+    const trackName = e.target.parentNode.textContent
+    const trackFavorites = document.getElementById('faveTrack')
+    const newTrack = document.createElement('li')
+    const removeButton = document.createElement('buutton')
+    removeButton.textContent = 'remove'
+    removeButton.addEventListener('click', () => {
+        trackFavorites.removeChild(newTrack)
+    })
+    newTrack.textContent = trackName
+    newTrack.appendChild(removeButton)
+    trackFavorites.appendChild(newTrack)
 
 }
