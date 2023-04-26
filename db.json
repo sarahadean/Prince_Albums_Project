@@ -91,19 +91,10 @@
         "15. And God Created Woman",
         "16. 3 Chains o' Gold",
         "17. Segue",
-<<<<<<< HEAD
         "18. The Sacrifice of Victor"],
-        "image" : "https://upload.wikimedia.org/wikipedia/en/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg"
-=======
-        "18. The Sacrifice of Victor"
-      ],
-<<<<<<< HEAD
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg/220px-Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg"
->>>>>>> 649334dfc77a5553928af8cd905a395ad42432fd
-=======
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg/220px-Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg",
       "rating": "5"
->>>>>>> f0b82c8aa688dd91b70b3ec9fb829248b636d517
+
     }
   ],
   "favorites": []
