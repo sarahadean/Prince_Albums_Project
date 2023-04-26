@@ -60,3 +60,11 @@ html{
 /* .container{
     display: block;
 } */
+
+img {
+    margin: 10px
+}
+
+#faveTrack{
+    float: left;
+}
