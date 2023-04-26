@@ -60,10 +60,10 @@ function trackFavorites(e) {
             const newTrack = document.createElement('li')
             const removeButton = document.createElement('button')
             removeButton.textContent = 'remove'
-            removeButton.setAttribute = ('id', 'delete-btn') 
+            removeButton.setAttribute('id', 'delete-btn') 
             removeButton.addEventListener('click', (e) => {
-                byeByeBye(e)
                 e.preventDefault()
+                byeByeBye(e, data.id)
             })
             newTrack.textContent = trackName
             newTrack.appendChild(removeButton)
@@ -74,9 +74,9 @@ function trackFavorites(e) {
     function byeByeBye(e, id) {
         const trackFavorite = document.getElementById('faveTrack')
         const byeParent = e.target.parentNode
-        // const id = byeParent.target.id
 
-        fetch (`http://localhost:3000/favorites/${id}` + id , {
+
+        fetch (`http://localhost:3000/favorites/${id}` , {
             method: 'DELETE',
             headers: {
                 "content-type": "application/json",
