@@ -26,6 +26,8 @@ function displayAlbum(album) {
     const displayYear = document.getElementById('year')
     displayYear.textContent = album.year_released
     const displayList = document.getElementById('tracklist')
+    const displayRate = document.getElementById('rating')
+    displayRate.textContent = album.rating
 
     displayList.textContent = ' '
 
@@ -88,3 +90,25 @@ function trackFavorites(e) {
             trackFavorite.removeChild(byeParent)
         })
     }
+
+const stars = document.getElementById('dropbtn')
+    
+
+function starsPatch(album) {
+    fetch(`http://localhost:3000/albums/${id}`, {
+        method: 'PATCH',
+        headers: { 
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            rating: e.target.value,
+            //album
+        })
+        .then(resp => resp.json())
+        .then(album => console.log(album))
+    })
+}
+
+// stars.addEventListener('change', () => {
+//     starsPatch(album)
+// })
