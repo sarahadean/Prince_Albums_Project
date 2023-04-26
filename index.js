@@ -1,9 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch ('http://localhost:3000/albums')
-    .then (response => response.json())
-    .then (album => {
-        const albumNav = document.getElementById("album_nav")
-        const firstAlbum = album[0]
+document.addEventListener('DOMContentLoaded', rover())
+const url = "http://localhost:3000/albums"
+const albumNav = document.getElementById('album_nav')
 
         album.forEach(album => {
             const albumImage = document.createElement("img")
@@ -15,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
             albumNav.appendChild(albumImage)
         });
         displayAlbum(firstAlbum)
-    })
-})
 
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
@@ -43,9 +38,18 @@ function displayAlbum(album) {
     })
 }
 
-function trackFavorites(e) {
-    e.preventDefault()
-    const trackName = e.target.parentNode.textContent
+rover(url).then(data => data.map((album => {
+    const albumImg = document.createElement('img')
+
+
+    albumImg.src = album.image
+    albumNav.appendChild(albumImg)
+}
+)))
+
+
+
+console.log(albumNav)
 
     fetch ('http://localhost:3000/favorites', {
         method: 'POST',
@@ -71,7 +75,7 @@ function trackFavorites(e) {
             newTrack.appendChild(removeButton)
             trackFavorites.appendChild(newTrack)
         })
-    }
+    
 
     function byeByeBye(e, id) {
         const trackFavorite = document.getElementById('faveTrack')
@@ -90,6 +94,7 @@ function trackFavorites(e) {
             trackFavorite.removeChild(byeParent)
         })
     }
+
 
 const stars = document.getElementById('dropbtn')
     
@@ -112,3 +117,4 @@ function starsPatch(album) {
 // stars.addEventListener('change', () => {
 //     starsPatch(album)
 // })
+
