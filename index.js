@@ -85,7 +85,7 @@ function displayAlbum(album) {
 }
 
 function trackFavorites(e) {
-    const trackName = e.target.parentNode.textContent
+    const trackName = e.target.previousSibling.textContent.trim()
     
     fetch ('http://localhost:3000/favorites', {
         method: 'POST',
@@ -102,6 +102,7 @@ function trackFavorites(e) {
         .then(data => {
             const trackFavorites = document.getElementById('faveTrack')
             const newTrack = document.createElement('li')
+            newTrack.textContent = trackName
             const removeButton = document.createElement('button')
             const updateRating = document.createElement('select')
             const updateOption1 = document.createElement('option')
@@ -125,7 +126,6 @@ function trackFavorites(e) {
                 e.preventDefault()
                 byeByeBye(e, data.id)
             })
-            newTrack.textContent = trackName
             newTrack.appendChild(removeButton)
             newTrack.appendChild(updateRating)
             updateRating.append(updateOption1)
@@ -157,18 +157,6 @@ function trackFavorites(e) {
 
 
 function changeTrackRating() {
-    fetch(`http://localhost:3000/albums/${id}`, {
-        method: 'PATCH',
-        headers: { 
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            rating: e.target.value,
-            //album
-        })
-        .then(resp => resp.json())
-        .then(album => console.log(album))
-    })
 
 }
-//test
+

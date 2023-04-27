@@ -15,22 +15,20 @@
         "Baby I'm A Star",
         "Purple Rain"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg",
-      "rating": "5"
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg"
     },
     {
       "id": 2,
       "name": "Prince",
       "year_released": 1979,
       "tracks": [
-        "1. I Wanna Be Your Lover",
-        "2. Why You Wanna Treat Me So Bad?",
-        "3. Sexy Dancer",
-        "4. When We're Dancing Close and Slow",
-        "5. With You"
+        " I Wanna Be Your Lover",
+        " Why You Wanna Treat Me So Bad?",
+        " Sexy Dancer",
+        " When We're Dancing Close and Slow",
+        " With You"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Prince_-_Prince.jpg/220px-Prince_-_Prince.jpg",
-      "rating": "5"
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Prince_-_Prince.jpg/220px-Prince_-_Prince.jpg"
     },
     {
       "id": 3,
@@ -46,8 +44,7 @@
         "Annie Christian",
         "Jack U Off"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Prince-Controversy.jpg/220px-Prince-Controversy.jpg",
-      "rating": "5"
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Prince-Controversy.jpg/220px-Prince-Controversy.jpg"
     },
     {
       "id": 4,
@@ -66,8 +63,7 @@
         "All the Critics Love U in New York",
         "International Lover"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Prince_-1999.jpg/220px-Prince_-1999.jpg",
-      "rating": "5"
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Prince_-1999.jpg/220px-Prince_-1999.jpg"
     },
     {
       "id": 5,
@@ -93,8 +89,7 @@
         "Segue",
         "The Sacrifice of Victor"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg/220px-Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg",
-      "rating": "5"
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg/220px-Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg"
     }
   ],
   "favorites": []
