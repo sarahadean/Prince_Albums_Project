@@ -12,9 +12,7 @@ const albumNav = document.getElementById('album_nav')
             albumNav.appendChild(albumImage)
         });
         displayAlbum(firstAlbum)
-        trackFavorites()
     })
-})
 
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
@@ -32,6 +30,21 @@ function displayAlbum(album) {
         const trackButton = document.createElement('button')
         const trackRating = document.createElement('select')
         const option1 = document.createElement('option')
+        const rating1 = document.createElement('i')
+        rating1.className = "fa-regular fa-star"
+        rating1.id = "rating 1"
+        const rating2 = document.createElement('i')
+        rating2.className = "fa-regular fa-star"
+        rating2.id = "rating 2"
+        const rating3 = document.createElement('i')
+        rating3.className = "fa-regular fa-star"
+        rating3.id = "rating 3"
+        const rating4 = document.createElement('i')
+        rating4.className = "fa-regular fa-star"
+        rating4.id = "rating 4"
+        const rating5 = document.createElement('i')
+        rating5.className = "fa-regular fa-star"
+        rating5.id = "rating 5"
         option1.value = "1 Star"
         option1.textContent = "1 Star"
         const option2 = document.createElement('option')
@@ -54,6 +67,11 @@ function displayAlbum(album) {
         displayList.appendChild(trackSong)
         trackSong.appendChild(trackButton)
         trackSong.appendChild(trackRating)
+        trackSong.appendChild(rating1)
+        trackSong.appendChild(rating2)
+        trackSong.appendChild(rating3)
+        trackSong.appendChild(rating4)
+        trackSong.appendChild(rating5)
         trackRating.appendChild(option1)
         trackRating.appendChild(option2)
         trackRating.appendChild(option3)
@@ -62,18 +80,9 @@ function displayAlbum(album) {
     })
 }
 
-rover(url).then(data => data.map((album => {
-    const albumImg = document.createElement('img')
-
-
-    albumImg.src = album.image
-    albumNav.appendChild(albumImg)
-}
-)))
-
-
-
-console.log(albumNav)
+function trackFavorites(e) {
+    e.preventDefault()
+    const trackName = e.target.parentNode.textContent
 
     fetch ('http://localhost:3000/favorites', {
         method: 'POST',
@@ -82,6 +91,7 @@ console.log(albumNav)
         },
         body: JSON.stringify({
             name: trackName,
+            rating: "",
 
         })
     })
@@ -142,7 +152,6 @@ console.log(albumNav)
         })
     }
 
-
 const stars = document.getElementById('dropbtn')
     
 
@@ -164,8 +173,7 @@ function starsPatch(album) {
 function changeTrackRating() {
 
 }
-})
+
 // stars.addEventListener('change', () => {
 //     starsPatch(album)
 // })
-
