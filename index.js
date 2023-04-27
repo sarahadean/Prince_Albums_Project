@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
+// const starClass = document.querySelectorAll(".fa-regular fa-star")
+
+// console.log(starClass)
+
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
     displayImage.src = album.image
@@ -159,4 +163,5 @@ function trackFavorites(e) {
 function changeTrackRating() {
 
 }
+
 
