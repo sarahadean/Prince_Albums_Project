@@ -3,11 +3,20 @@ html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* DomaineDisplay, 'serif'; */
     color: antiquewhite;
-    margin: 10px;
+    
+
 }
 #header{
     background-color: black;
     font-size: 50px;
+    text-align: center;
+    height: 100px;
+}
+
+div{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #nav-bar{
@@ -23,10 +32,9 @@ html{
     /* display:flex; */
 
 
-#album-image{
-    width: 450px;
-    height: 450px;
-}
+/* #album-image{
+    
+} */
 
 /* #title, #year {
     /* margin-left: 500px; */
@@ -38,6 +46,7 @@ html{
     display: flex;
     float: left;
     width: 1400px;
+    height: auto;
 
 }
 
@@ -73,8 +82,12 @@ button{
     display: flex;
 }
 
-/* #movie-list img:hover {
-    filter: drop-shadow(0 0 0.75rem white)
+#album_nav img:hover {
+    filter: drop-shadow(0 0 0.75rem #CBC3E3)
 }
 
-#id img:hover{ */
+#album-image{
+   height: 700px;
+   filter: drop-shadow(0 0 2em #483248);
+   
+}

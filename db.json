@@ -97,5 +97,26 @@
       "rating": "5"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "name": " My Name Is Prince (Prince, Tony M.) Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 1
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 2
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 3
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 4
+    }
+  ]
 }
