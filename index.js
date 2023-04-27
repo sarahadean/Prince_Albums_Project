@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', rover())
+document.addEventListener('DOMContentLoaded', function() {
 const url = "http://localhost:3000/albums"
 const albumNav = document.getElementById('album_nav')
 
@@ -140,7 +140,7 @@ function starsPatch(album) {
 function changeTrackRating() {
 
 }
-
+})
 // stars.addEventListener('change', () => {
 //     starsPatch(album)
 // })
