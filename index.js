@@ -12,6 +12,9 @@ const albumNav = document.getElementById('album_nav')
             albumNav.appendChild(albumImage)
         });
         displayAlbum(firstAlbum)
+        trackFavorites()
+    })
+})
 
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
@@ -21,8 +24,6 @@ function displayAlbum(album) {
     const displayYear = document.getElementById('year')
     displayYear.textContent = album.year_released
     const displayList = document.getElementById('tracklist')
-    const displayRate = document.getElementById('rating')
-    displayRate.textContent = album.rating
 
     displayList.textContent = ' '
 
@@ -47,7 +48,7 @@ function displayAlbum(album) {
         option5.textContent = "5 Star"
 
         trackSong.textContent = ` ${track} `
-        trackButton.textContent = "+"
+        trackButton.textContent = "Add To Favorites"
         trackButton.addEventListener('click', trackFavorites)
         trackRating.addEventListener('change', changeTrackRating)
         displayList.appendChild(trackSong)
@@ -81,6 +82,7 @@ console.log(albumNav)
         },
         body: JSON.stringify({
             name: trackName,
+
         })
     })
         .then(response => response.json())
@@ -88,6 +90,22 @@ console.log(albumNav)
             const trackFavorites = document.getElementById('faveTrack')
             const newTrack = document.createElement('li')
             const removeButton = document.createElement('button')
+            const updateRating = document.createElement('select')
+            const updateOption1 = document.createElement('option')
+            updateOption1.value = "1 Star"
+            updateOption1.textContent = "1 Star"
+            const updateOption2 = document.createElement('option')
+            updateOption2.value = "2 Star"
+            updateOption2.textContent = "2 Star"
+            const updateOption3 = document.createElement('option')
+            updateOption3.value = "3 Star"
+            updateOption3.textContent = "3 Star"
+            const updateOption4 = document.createElement('option')
+            updateOption4.value = "4 Star"
+            updateOption4.textContent = "4 Star"
+            const updateOption5 = document.createElement('option')
+            updateOption5.value = "5 Star"
+            updateOption5.textContent = "5 Star"
             removeButton.textContent = 'remove'
             removeButton.setAttribute('id', 'delete-btn') 
             removeButton.addEventListener('click', (e) => {
@@ -96,6 +114,12 @@ console.log(albumNav)
             })
             newTrack.textContent = trackName
             newTrack.appendChild(removeButton)
+            newTrack.appendChild(updateRating)
+            updateRating.append(updateOption1)
+            updateRating.append(updateOption2)
+            updateRating.append(updateOption3)
+            updateRating.append(updateOption4)
+            updateRating.append(updateOption5)
             trackFavorites.appendChild(newTrack)
         })
     
