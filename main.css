@@ -68,3 +68,7 @@ img {
 #faveTrack{
     float: left;
 }
+
+button{
+    display: flex;
+}
