@@ -91,3 +91,8 @@ button{
    filter: drop-shadow(0 0 2em #483248);
    
 }
+
+.star-selected {
+    color: #a218ff;
+    filter: drop-shadow(0 0 0.75rem yellow)
+  }
