@@ -15,7 +15,7 @@
         "Baby I'm A Star",
         "Purple Rain"
       ],
-      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Princepurplerain.jpg/220px-Princepurplerain.jpg",
+      "image": "https://i.discogs.com/l0a5-0YlkLtJZKmpNKI5d8qClX6vTbkflRqk0oVVGxI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTQz/NTEtMTIwNDA1NTgz/Ni5qcGVn.jpeg",
       "back": "https://albumartexchange.com/coverart/gallery/pr/prince_purplerainbackcover_aew6.jpg"
     },
     {
@@ -47,7 +47,7 @@
         "Jack U Off"
       ],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Prince-Controversy.jpg/220px-Prince-Controversy.jpg",
-      "back" : "https://m.media-amazon.com/images/I/617pmtHO6YL.jpg"
+      "back": "https://m.media-amazon.com/images/I/617pmtHO6YL.jpg"
     },
     {
       "id": 4,
@@ -97,8 +97,106 @@
       "back": "https://m.media-amazon.com/images/I/81F9r7ieNNL._SX355_.jpg"
     }
   ],
-
   "favorites": [
-
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 1
+    },
+    {
+      "name": "Take Me With U",
+      "rating": "",
+      "id": 2
+    },
+    {
+      "name": "Take Me With U",
+      "rating": "",
+      "id": 3
+    },
+    {
+      "name": "Darling Nikki",
+      "rating": "",
+      "id": 4
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 5
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 6
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 7
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 8
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 9
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 10
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 11
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 12
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 13
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 14
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 15
+    },
+    {
+      "name": "Darling Nikki",
+      "rating": "",
+      "id": 16
+    },
+    {
+      "name": "I Would Die 4 U",
+      "rating": "",
+      "id": 17
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 18
+    },
+    {
+      "name": "Take Me With U",
+      "rating": "",
+      "id": 19
+    },
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 20
+    }
   ]
 }
