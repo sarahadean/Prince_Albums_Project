@@ -29,12 +29,35 @@ function displayAlbum(album) {
     album.tracks.forEach(track => {
         const trackSong = document.createElement('li')
         const trackButton = document.createElement('button')
+        const trackRating = document.createElement('select')
+        const option1 = document.createElement('option')
+        option1.value = "1 Star"
+        option1.textContent = "1 Star"
+        const option2 = document.createElement('option')
+        option2.value = "2 Star"
+        option2.textContent = "2 Star"
+        const option3 = document.createElement('option')
+        option3.value = "3 Star"
+        option3.textContent = "3 Star"
+        const option4 = document.createElement('option')
+        option4.value = "4 Star"
+        option4.textContent = "4 Star"
+        const option5 = document.createElement('option')
+        option5.value = "5 Star"
+        option5.textContent = "5 Star"
+
         trackSong.textContent = ` ${track} `
         trackButton.textContent = "+"
         trackButton.addEventListener('click', trackFavorites)
+        trackRating.addEventListener('change', changeTrackRating)
         displayList.appendChild(trackSong)
         trackSong.appendChild(trackButton)
-        
+        trackSong.appendChild(trackRating)
+        trackRating.appendChild(option1)
+        trackRating.appendChild(option2)
+        trackRating.appendChild(option3)
+        trackRating.appendChild(option4)
+        trackRating.appendChild(option5)
     })
 }
 
@@ -112,6 +135,10 @@ function starsPatch(album) {
         .then(resp => resp.json())
         .then(album => console.log(album))
     })
+}
+
+function changeTrackRating() {
+
 }
 
 // stars.addEventListener('change', () => {
