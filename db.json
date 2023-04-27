@@ -97,5 +97,22 @@
       "rating": "5"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "name": " 7. Blue Light +",
+      "id": 1
+    },
+    {
+      "name": " 1. My Name Is Prince (Prince, Tony M.) +",
+      "id": 2
+    },
+    {
+      "name": " 1. My Name Is Prince (Prince, Tony M.) +",
+      "id": 3
+    },
+    {
+      "name": " 1. My Name Is Prince (Prince, Tony M.) +",
+      "id": 4
+    }
+  ]
 }
