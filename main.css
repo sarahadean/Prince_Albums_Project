@@ -1,5 +1,5 @@
 html{
-    background-color: #9663c4;
+    background-image: linear-gradient(#800080, #9663c4);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* DomaineDisplay, 'serif'; */
     color: antiquewhite;
@@ -28,25 +28,15 @@ div{
   
 }
 
-/* #album-info{
-    /* display:flex; */
-
-
-/* #album-image{
+#album-nav{
     
-} */
-
-/* #title, #year {
-    /* margin-left: 500px; */
-    /* float: left;
-    display: inline */
-
+}
 
 .flex-container {
     display: flex;
     float: left;
-    width: 1400px;
-    height: auto;
+    width: 75% !important;
+    background-color: white;
 
 }
 
@@ -57,12 +47,15 @@ div{
     margin: 10px;
     margin-left: 40px;
     font-size: xx-large;
+    background-color: black;
+    justify-content: center;
 }
 
 #favorites{
-    background-color: green;
+    background-color: blue;
+    opacity: 0.3;
    float: right;
-   width: 300px;
+   width: 22% !important;
    text-align: center;
    height: auto;
 }
@@ -87,7 +80,9 @@ button{
 }
 
 #album-image{
-   height: 700px;
+  display: block;
+   max-width: 700px;
+   max-height: 700px;
    filter: drop-shadow(0 0 2em #483248);
-   
 }
+
