@@ -18,10 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 })
 
-// const starClass = document.querySelectorAll(".fa-regular fa-star")
-
-// console.log(starClass)
-
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
     displayImage.src = album.image
@@ -36,55 +32,11 @@ function displayAlbum(album) {
     album.tracks.forEach(track => {
         const trackSong = document.createElement('li')
         const trackButton = document.createElement('button')
-        const trackRating = document.createElement('select')
-        const option1 = document.createElement('option')
-        const rating1 = document.createElement('i')
-        rating1.className = "fa-regular fa-star"
-        rating1.id = "rating 1"
-        const rating2 = document.createElement('i')
-        rating2.className = "fa-regular fa-star"
-        rating2.id = "rating 2"
-        const rating3 = document.createElement('i')
-        rating3.className = "fa-regular fa-star"
-        rating3.id = "rating 3"
-        const rating4 = document.createElement('i')
-        rating4.className = "fa-regular fa-star"
-        rating4.id = "rating 4"
-        const rating5 = document.createElement('i')
-        rating5.className = "fa-regular fa-star"
-        rating5.id = "rating 5"
-        option1.value = "1 Star"
-        option1.textContent = "1 Star"
-        const option2 = document.createElement('option')
-        option2.value = "2 Star"
-        option2.textContent = "2 Star"
-        const option3 = document.createElement('option')
-        option3.value = "3 Star"
-        option3.textContent = "3 Star"
-        const option4 = document.createElement('option')
-        option4.value = "4 Star"
-        option4.textContent = "4 Star"
-        const option5 = document.createElement('option')
-        option5.value = "5 Star"
-        option5.textContent = "5 Star"
-
         trackSong.textContent = ` ${track} `
         trackButton.textContent = "Add To Favorites"
         trackButton.addEventListener('click', trackFavorites)
-        trackRating.addEventListener('change', changeTrackRating)
         displayList.appendChild(trackSong)
         trackSong.appendChild(trackButton)
-        trackSong.appendChild(trackRating)
-        trackSong.appendChild(rating1)
-        trackSong.appendChild(rating2)
-        trackSong.appendChild(rating3)
-        trackSong.appendChild(rating4)
-        trackSong.appendChild(rating5)
-        trackRating.appendChild(option1)
-        trackRating.appendChild(option2)
-        trackRating.appendChild(option3)
-        trackRating.appendChild(option4)
-        trackRating.appendChild(option5)
     })
 }
 
@@ -108,35 +60,38 @@ function trackFavorites(e) {
             const newTrack = document.createElement('li')
             newTrack.textContent = trackName
             const removeButton = document.createElement('button')
-            const updateRating = document.createElement('select')
-            const updateOption1 = document.createElement('option')
-            updateOption1.value = "1 Star"
-            updateOption1.textContent = "1 Star"
-            const updateOption2 = document.createElement('option')
-            updateOption2.value = "2 Star"
-            updateOption2.textContent = "2 Star"
-            const updateOption3 = document.createElement('option')
-            updateOption3.value = "3 Star"
-            updateOption3.textContent = "3 Star"
-            const updateOption4 = document.createElement('option')
-            updateOption4.value = "4 Star"
-            updateOption4.textContent = "4 Star"
-            const updateOption5 = document.createElement('option')
-            updateOption5.value = "5 Star"
-            updateOption5.textContent = "5 Star"
+            const ratings1 = document.createElement('i')
+            ratings1.className = "fa-solid fa-star"
+            ratings1.id = "ratings 1"
+            const ratings2 = document.createElement('i')
+            ratings2.className = "fa-solid fa-star"
+            ratings2.id = "ratings 2"
+            const ratings3 = document.createElement('i')
+            ratings3.className = "fa-solid fa-star"
+            ratings3.id = "ratings 3"
+            const ratings4 = document.createElement('i')
+            ratings4.className = "fa-solid fa-star"
+            ratings4.id = "ratings 4"
+            const ratings5 = document.createElement('i')
+            ratings5.className = "fa-solid fa-star"
+            ratings5.id = "ratings 5"
             removeButton.textContent = 'remove'
             removeButton.setAttribute('id', 'delete-btn') 
             removeButton.addEventListener('click', (e) => {
                 e.preventDefault()
                 byeByeBye(e, data.id)
             })
+            ratings1.addEventListener('click', changeTrackRating)
+            ratings2.addEventListener('click', changeTrackRating)
+            ratings3.addEventListener('click', changeTrackRating)
+            ratings4.addEventListener('click', changeTrackRating)
+            ratings5.addEventListener('click', changeTrackRating)
+            newTrack.appendChild(ratings1)
+            newTrack.appendChild(ratings2)
+            newTrack.appendChild(ratings3)
+            newTrack.appendChild(ratings4)
+            newTrack.appendChild(ratings5)
             newTrack.appendChild(removeButton)
-            newTrack.appendChild(updateRating)
-            updateRating.append(updateOption1)
-            updateRating.append(updateOption2)
-            updateRating.append(updateOption3)
-            updateRating.append(updateOption4)
-            updateRating.append(updateOption5)
             trackFavorites.appendChild(newTrack)
         })
     }
@@ -160,7 +115,21 @@ function trackFavorites(e) {
     }
 
 
-function changeTrackRating() {
+function changeTrackRating(e) {
+    const starIcons = e.target.parentNode.querySelectorAll('.fa-star');
+    const selectedStar = e.target;
+    const selectedIndex = Array.from(starIcons).indexOf(selectedStar);
+  
+    starIcons.forEach((star, index) => {
+      if (index <= selectedIndex) {
+        star.classList.add('star-selected');
+      } else {
+        star.classList.remove('star-selected');
+      }
+    });
+  
+    const trackName = e.target.parentNode.firstChild.textContent.trim();
+    const rating = selectedIndex + 1;
 
 }
 
