@@ -91,11 +91,32 @@
         "And God Created Woman",
         "3 Chains o' Gold",
         "Segue",
-        "The Sacrifice of Victor"],
+        "The Sacrifice of Victor"
+      ],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg/220px-Love_Symbol_Album_%28Prince_and_the_New_Power_Generation_album_-_cover_art%29.jpg",
       "rating": "5"
-
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "name": " My Name Is Prince (Prince, Tony M.) Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 1
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 2
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 3
+    },
+    {
+      "name": " Let's Go Crazy Add To Favorites1 Star2 Star3 Star4 Star5 Star",
+      "rating": "",
+      "id": 4
+    }
+  ]
 }
