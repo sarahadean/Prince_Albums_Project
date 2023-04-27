@@ -14,7 +14,6 @@ const albumNav = document.getElementById('album_nav')
         displayAlbum(firstAlbum)
         trackFavorites()
     })
-})
 
 function displayAlbum(album) {
     const displayImage = document.getElementById('album-image')
@@ -164,8 +163,7 @@ function starsPatch(album) {
 function changeTrackRating() {
 
 }
-})
+
 // stars.addEventListener('change', () => {
 //     starsPatch(album)
 // })
-
