@@ -11,6 +11,7 @@ html{
     font-size: 50px;
     text-align: center;
     height: 100px;
+    font-family: Lucida Handwriting, cursive;
 }
 
 div{
@@ -87,7 +88,6 @@ button {
    filter: drop-shadow(0 0 2em #483248);
 
 }
-
 
 .star-selected {
     color: #a218ff;

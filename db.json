@@ -27,7 +27,11 @@
         " Why You Wanna Treat Me So Bad?",
         " Sexy Dancer",
         " When We're Dancing Close and Slow",
-        " With You"
+        " With You",
+        " Bambi",
+        " Still Waiting",
+        " I Feel for You",
+        " It's Gonna be lonely"
       ],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Prince_-_Prince.jpg/220px-Prince_-_Prince.jpg",
       "back": "https://m.media-amazon.com/images/I/71cNSHyNjTL._SL1261_.jpg"
@@ -97,106 +101,6 @@
       "back": "https://m.media-amazon.com/images/I/81F9r7ieNNL._SX355_.jpg"
     }
   ],
-  "favorites": [
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 1
-    },
-    {
-      "name": "Take Me With U",
-      "rating": "",
-      "id": 2
-    },
-    {
-      "name": "Take Me With U",
-      "rating": "",
-      "id": 3
-    },
-    {
-      "name": "Darling Nikki",
-      "rating": "",
-      "id": 4
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 5
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 6
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 7
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 8
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 9
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 10
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 11
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 12
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 13
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 14
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 15
-    },
-    {
-      "name": "Darling Nikki",
-      "rating": "",
-      "id": 16
-    },
-    {
-      "name": "I Would Die 4 U",
-      "rating": "",
-      "id": 17
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 18
-    },
-    {
-      "name": "Take Me With U",
-      "rating": "",
-      "id": 19
-    },
-    {
-      "name": "Let's Go Crazy",
-      "rating": "",
-      "id": 20
-    }
-  ]
+  "favorites": []
+
 }
