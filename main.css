@@ -7,9 +7,11 @@ html{
 
 }
 #header{
+    font-size: 50px;
     font-size: 90px;
     text-align: center;
     height: 100px;
+    font-family: Lucida Handwriting, cursive;
 }
 
 div{
@@ -32,6 +34,7 @@ div{
     float: left;
     width: 75% !important;
 
+
 }
 
 .flex-child{
@@ -40,15 +43,15 @@ div{
     width: auto;
     margin: 10px;
     margin-left: 40px;
+    font-size: xx-large;
     font-size: x-large;
     justify-content: center;
 }
 
 #favorites{
-   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a7c0fa9-ff03-485e-a4ac-a086da29adfc/da0pye3-9fd5e09a-d224-4f4b-afd4-9b530de63880.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhN2MwZmE5LWZmMDMtNDg1ZS1hNGFjLWEwODZkYTI5YWRmY1wvZGEwcHllMy05ZmQ1ZTA5YS1kMjI0LTRmNGItYWZkNC05YjUzMGRlNjM4ODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Fr_gSLQOF2GEqFOXRb4NtULls-6u3FUFwoLqxPSAzvY");
-   min-height: 700px;
+    background-color: blue;
    float: right;
-   width: 22% !important;
+   width: 23.4% !important;
    text-align: center;
    height: auto;
 }
