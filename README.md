@@ -2,7 +2,7 @@
 
 Phase 1 Flatiron Project - OnlyPrince
 
-Collaborators: Sarah Dean, Eric Macario, Tony Ramirez, and Jason Synsmir
+Collaborators: Sarah Dean, Eric Macario, Tony Ramirez, and Jason Synsmir.
 Special thanks to Rusty Dean for the website name. 
 
 
