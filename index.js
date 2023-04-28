@@ -38,11 +38,14 @@ function displayAlbum(album) {
     album.tracks.forEach(track => {
         const trackSong = document.createElement('li')
         const trackButton = document.createElement('button')
+        // const buttonIcon = document.createElement('i')
+        trackButton.className = "fa-solid fa-heart"
         trackSong.textContent = ` ${track} `
-        trackButton.textContent = "Add To Favorites"
+        trackButton.textContent = " "
         trackButton.addEventListener('click', trackFavorites)
         displayList.appendChild(trackSong)
         trackSong.appendChild(trackButton)
+        // trackButton.appendChild(buttonIcon)
     })
 }
 
