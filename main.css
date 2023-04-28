@@ -7,11 +7,11 @@ html{
 
 }
 #header{
-    background-color: black;
     font-size: 50px;
     text-align: center;
     height: 100px;
     font-family: Lucida Handwriting, cursive;
+
 }
 
 div{
@@ -37,7 +37,7 @@ div{
     display: flex;
     float: left;
     width: 75% !important;
-    background-color: white;
+
 
 }
 
@@ -48,15 +48,13 @@ div{
     margin: 10px;
     margin-left: 40px;
     font-size: xx-large;
-    background-color: black;
     justify-content: center;
 }
 
 #favorites{
     background-color: blue;
-    opacity: 0.3;
    float: right;
-   width: 22% !important;
+   width: 23.4% !important;
    text-align: center;
    height: auto;
 }
@@ -87,7 +85,6 @@ button{
    filter: drop-shadow(0 0 2em #483248);
 
 }
-
 
 
 .star-selected {
