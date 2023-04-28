@@ -21,7 +21,6 @@ div{
 }
 
 #nav-bar{
-   
     font-size: 50px;
     height:auto;
     display:flex;
@@ -29,9 +28,6 @@ div{
   
 }
 
-#album-nav{
-    
-}
 
 .flex-container {
     display: flex;
@@ -48,6 +44,7 @@ div{
     margin: 10px;
     margin-left: 40px;
     font-size: xx-large;
+    font-size: x-large;
     justify-content: center;
 }
 
@@ -66,26 +63,32 @@ img {
     margin: 10px
 }
 
-#faveTrack{
+#faveTrack {
     float: left;
 }
 
-button{
-    display: flex;
+button {
+    
 }
 
 #album_nav img:hover {
     filter: drop-shadow(0 0 0.75rem #CBC3E3)
 }
 
+#album_nav img{
+    height: 300px;
+}
+
 #album-image{
-  display: block;
+  /* display: block; */
+  object-fit: cover;
    max-width: 700px;
    max-height: 700px;
+   min-width: 450px;
+   min-height: 450px;
    filter: drop-shadow(0 0 2em #483248);
 
 }
-
 
 .star-selected {
     color: #a218ff;
