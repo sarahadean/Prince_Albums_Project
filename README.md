@@ -3,8 +3,8 @@
 Phase 1 Flatiron Project - OnlyPrince
 
 Collaborators: Sarah Dean, Eric Macario, Tony Ramirez, and Jason Synsmir
-
 Special thanks to Rusty Dean for the website name. 
+
 
 In this project, we utilized CRUD to create a funtional website. This project includes submit, click and mouseover event listeners. 
 
