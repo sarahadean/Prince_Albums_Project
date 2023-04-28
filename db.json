@@ -27,7 +27,11 @@
         " Why You Wanna Treat Me So Bad?",
         " Sexy Dancer",
         " When We're Dancing Close and Slow",
-        " With You"
+        " With You",
+        " Bambi",
+        " Still Waiting",
+        " I Feel for You",
+        " It's Gonna be lonely"
       ],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Prince_-_Prince.jpg/220px-Prince_-_Prince.jpg",
       "back": "https://m.media-amazon.com/images/I/71cNSHyNjTL._SL1261_.jpg"
@@ -47,7 +51,7 @@
         "Jack U Off"
       ],
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Prince-Controversy.jpg/220px-Prince-Controversy.jpg",
-      "back" : "https://m.media-amazon.com/images/I/617pmtHO6YL.jpg"
+      "back": "https://m.media-amazon.com/images/I/617pmtHO6YL.jpg"
     },
     {
       "id": 4,
@@ -97,8 +101,5 @@
       "back": "https://m.media-amazon.com/images/I/81F9r7ieNNL._SX355_.jpg"
     }
   ],
-
-  "favorites": [
-
-  ]
+  "favorites": []
 }

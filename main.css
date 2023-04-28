@@ -11,6 +11,7 @@ html{
     font-size: 50px;
     text-align: center;
     height: 100px;
+    font-family: Lucida Handwriting, cursive;
 }
 
 div{
@@ -88,8 +89,6 @@ button{
 }
 
 
-   
-}
 
 .star-selected {
     color: #a218ff;

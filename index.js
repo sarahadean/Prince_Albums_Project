@@ -26,6 +26,12 @@ function displayAlbum(album) {
     const displayYear = document.getElementById('year')
     displayYear.textContent = album.year_released
     const displayList = document.getElementById('tracklist')
+    displayImage.addEventListener('mouseover', () => {
+    displayImage.src = album.back
+    })
+    displayImage.addEventListener('mouseout', () => { 
+        displayImage.src = album.image 
+    })
 
     displayList.textContent = ' '
 
