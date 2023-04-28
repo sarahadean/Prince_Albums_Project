@@ -1,17 +1,15 @@
 html{
     background-image: linear-gradient(#800080, #9663c4);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Luminari';
     /* DomaineDisplay, 'serif'; */
     color: antiquewhite;
     
 
 }
 #header{
-    background-color: black;
-    font-size: 50px;
+    font-size: 90px;
     text-align: center;
     height: 100px;
-    font-family: Lucida Handwriting, cursive;
 }
 
 div{
@@ -47,8 +45,8 @@ div{
 }
 
 #favorites{
-    background-color: blue;
-    opacity: 0.3;
+   background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a7c0fa9-ff03-485e-a4ac-a086da29adfc/da0pye3-9fd5e09a-d224-4f4b-afd4-9b530de63880.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhN2MwZmE5LWZmMDMtNDg1ZS1hNGFjLWEwODZkYTI5YWRmY1wvZGEwcHllMy05ZmQ1ZTA5YS1kMjI0LTRmNGItYWZkNC05YjUzMGRlNjM4ODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Fr_gSLQOF2GEqFOXRb4NtULls-6u3FUFwoLqxPSAzvY");
+   min-height: 700px;
    float: right;
    width: 22% !important;
    text-align: center;
@@ -67,7 +65,33 @@ img {
 }
 
 button {
-    
+    align-items: center;
+    appearance: none;
+    background-color: #483248;
+    background-image: linear-gradient(1deg, #4F58FD, #483248 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+white-space: nowrap;
 }
 
 #album_nav img:hover {
@@ -94,3 +118,6 @@ button {
     filter: drop-shadow(0 0 0.75rem yellow)
   }
 
+#tracklist{
+    font-family: 'Gill Sans';
+}
