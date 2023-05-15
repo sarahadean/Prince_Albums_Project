@@ -102,6 +102,25 @@
     }
   ],
   "favorites": [
- 
+    {
+      "name": "Let's Go Crazy",
+      "rating": "",
+      "id": 1
+    },
+    {
+      "name": "Take Me With U",
+      "rating": "",
+      "id": 2
+    },
+    {
+      "name": "Delirious",
+      "rating": "",
+      "id": 3
+    },
+    {
+      "name": "Let's Pretend We're Married",
+      "rating": "",
+      "id": 4
+    }
   ]
 }
